@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexFit TI - Automação e Presença Digital</title>
+    <meta name="description" content="A NexFit TI cria sites profissionais, agentes de IA para WhatsApp e automações inteligentes para tirar o peso operacional das suas costas.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                50: '#f0f9ff',
+                100: '#e0f2fe',
+                500: '#0ea5e9',
+                600: '#0284c7',
+                700: '#0369a1',
+                900: '#0c4a6e',
+              },
+              accent: {
+                500: '#14b8a6', // Teal
+                600: '#0d9488',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Enhanced Focus Styles for Accessibility */
+      :focus-visible {
+        outline: 2px solid #0ea5e9;
+        outline-offset: 4px;
+      }
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #0ea5e9;
+        color: white;
+        padding: 8px;
+        z-index: 100;
+        transition: top 0.3s;
+      }
+      .skip-link:focus {
+        top: 0;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body class="antialiased">
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    <div id="root"></div>
+  </body>
+</html>
